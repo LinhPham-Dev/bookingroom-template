@@ -2277,6 +2277,35 @@ a.google i {
 	opacity: 0.76;
 }
 
+/* Cart page */
+.card-body {
+	flex: 1 1 auto;
+	padding: 1.5rem;
+}
+
+.table-borderless thead th {
+	border-top: 1px solid #e3ebf3;
+	border-bottom: 2px solid #e3ebf3;
+}
+
+.table-borderless tbody .nice-select {
+	height: 40px;
+	line-height: 40px;
+}
+
+.table-borderless tbody .btn {
+	width: 30px;
+}
+
+.cart-page .form-actions .btn {
+	padding: 10px;
+	margin: 20px 0;
+}
+
+.order-complete-page .card {
+	margin-bottom: 45px;
+}
+
 /* Massonary Gallery Start
 ============================================================================================ */
 /* Feature section start
@@ -3406,6 +3435,636 @@ a.read-more:hover {
 	font-weight: 600;
 	color: #fea116;
 }
+
+/* Checkout Page
+============================================================================================ */
+.margin_60 {
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
+.checkout-page ul.default-links {
+	list-style: none;
+	padding: 0;
+	margin: 0 0 20px 0;
+}
+
+.checkout-page .default-links li {
+	margin-bottom: 15px;
+	line-height: 24px;
+	padding: 15px 20px;
+	background: #f4f5f6;
+	color: #1c1c1c;
+	font-size: 13px;
+	border: 1px solid #ededed;
+}
+
+.checkout-page .default-links li a {
+	color: #056ab0;
+}
+
+.checkout-page .billing-details {
+	position: relative;
+	margin-bottom: 20px;
+}
+
+.checkout-page .check-box {
+	line-height: 24px;
+	font-size: 14px;
+	font-weight: 400;
+	padding-top: 5px;
+}
+
+.checkout-page .check-box label {
+	position: relative;
+	top: -1px;
+	font-weight: 700;
+	padding: 0;
+	font-size: 13px;
+	cursor: pointer;
+}
+
+.checkout-page .place-order {
+	position: relative;
+	padding: 0;
+}
+
+.checkout-page .payment-options {
+	position: relative;
+	margin-bottom: 30px;
+}
+
+.checkout-page .payment-options ul {
+	list-style: none;
+	margin: 0 0 15px 0;
+	padding: 0;
+}
+
+.checkout-page .payment-options li {
+	margin-bottom: 15px;
+}
+
+.checkout-page .payment-options li .radio-option {
+	position: relative;
+}
+
+.checkout-page .payment-options li .radio-option label {
+	position: relative;
+	display: inline-block;
+	padding-left: 30px;
+	font-weight: 700 !important;
+	cursor: pointer;
+	position: relative;
+	top: -7px;
+}
+
+.checkout-page .payment-options li .radio-option label strong {
+	font-weight: 700;
+}
+
+.checkout-page .payment-options li .radio-option input[type="radio"] {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 15px !important;
+	height: 15px !important;
+}
+
+.checkout-page .payment-options li .radio-option label .small-text {
+	position: relative;
+	display: block;
+	margin-top: 15px;
+	margin-left: -30px;
+	padding: 10px 15px;
+	letter-spacing: 0;
+	text-transform: none;
+	font-weight: 400;
+	font-size: 13px;
+	color: #888;
+	line-height: 20px;
+	background: #ededed;
+}
+
+.checkout-page .payment-options li .radio-option label .small-text:before {
+	content: "";
+	position: absolute;
+	left: 40px;
+	top: -15px;
+	border: 8px solid transparent;
+	border-bottom: 8px solid #ededed;
+}
+
+.checkout-page .payment-options li .radio-option label img {
+	position: relative;
+	margin-top: -5px;
+	display: inline-block;
+	max-width: 100%;
+	padding-left: 30px;
+}
+
+.checkout-page .place-order .theme-btn {
+	display: block;
+	width: 100%;
+}
+
+.default-title {
+	margin-bottom: 25px;
+	padding-bottom: 0;
+	border-bottom: 1px solid #ddd;
+}
+
+.default-title h2 {
+	font-size: 15px;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+.shop-form {
+	position: relative;
+}
+
+.shop-form .form-group {
+	position: relative;
+	margin-bottom: 20px;
+}
+.billing-details .shop-form .form-group {
+	margin-bottom: 20px;
+}
+.shop-form .form-group label {
+	font-weight: 600;
+}
+.shop-form .form-group label sup {
+	color: red;
+}
+.shop-form select {
+	-webkit-appearance: none;
+	-ms-appearance: none;
+	-moz-appearance: none;
+	-o-appearance: none;
+	background: #fff url(../img/icon-select.png) right center no-repeat;
+	cursor: pointer;
+}
+.shop-form select option {
+	text-indent: 15px;
+}
+.shop-form textarea {
+	resize: none;
+	height: 120px !important;
+}
+.checkout-page .your-order {
+	position: relative;
+	margin-bottom: 40px;
+}
+.checkout-page ul.orders-table {
+	padding: 0;
+	margin: 0 0 30px 0;
+	display: table;
+	width: 100%;
+	vertical-align: middle;
+}
+.checkout-page .orders-table li {
+	display: table-row;
+	line-height: 24px;
+	padding: 12px 15px;
+}
+.checkout-page .orders-table li img {
+	display: inline-block;
+	margin-right: 10px;
+}
+.checkout-page .orders-table .table-header,
+.checkout-page .orders-table .total {
+	background: #f4f5f6;
+	border-bottom: none;
+}
+.checkout-page .orders-table li:last-child {
+	border-bottom: none;
+	margin-bottom: 0;
+}
+.checkout-page .orders-table .col {
+	position: relative;
+	display: table-cell;
+	vertical-align: middle;
+	line-height: 24px;
+	padding: 15px 15px;
+	width: 75%;
+	font-weight: 500;
+	text-transform: uppercase;
+	border-bottom: 1px solid #e0e0e0;
+}
+.checkout-page .orders-table .col.second {
+	width: 25%;
+}
+.checkout-page .orders-table .table-header .col,
+.checkout-page .orders-table .total .col {
+	padding: 10px 15px;
+	border: none;
+}
+.checkout-page .orders-table li .col:last-child {
+	text-align: right;
+}
+.checkout-page .orders-table .total {
+	color: #f7542b;
+}
+.your-order .coupon-code .form-group {
+	position: relative;
+	margin-bottom: 0 !important;
+	display: table;
+	width: 100%;
+}
+.your-order .coupon-code .form-group .field-group {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.your-order
+	.coupon-code
+	.form-group
+	.field-group
+	input[type="text"]::placeholder {
+	font-size: 16px;
+}
+
+.your-order .coupon-code .form-group .btn-field {
+	float: right;
+}
+
+.your-order .coupon-code .form-group .btn-field .filled-btn {
+	padding: 5px 15px;
+	border-radius: 5px;
+}
+
+.your-order .coupon-code .form-group input {
+	display: block;
+	width: 100%;
+	line-height: 24px;
+	padding: 10px 15px;
+	border: 1px solid #e0e0e0;
+	border-radius: 3px;
+}
+
+/* Chat Popup */
+
+.chat-popup {
+	display: none;
+	position: fixed;
+	right: 35px;
+	bottom: 25px;
+	width: 330px;
+	z-index: 110;
+	box-shadow: -1px 0px 10px 0.2px #b6adad;
+}
+
+.stretch-card > .card {
+	width: 100%;
+	min-width: 100%;
+}
+
+.flex {
+	-webkit-box-flex: 1;
+	-ms-flex: 1 1 auto;
+	flex: 1 1 auto;
+}
+
+@media (max-width: 991.98px) {
+	.padding {
+		padding: 1.5rem;
+	}
+}
+
+@media (max-width: 767.98px) {
+	.padding {
+		padding: 1rem;
+	}
+}
+
+.padding {
+	padding: 3rem;
+}
+
+.box.box-warning {
+	border-top-color: #f39c12;
+}
+
+.box {
+	position: relative;
+	border-radius: 3px;
+	background: #ffffff;
+	border-top: 3px solid #d2d6de;
+	margin-bottom: -10px;
+	width: 100%;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.box-header.with-border {
+	border-bottom: 1px solid #f4f4f4;
+}
+
+.box-header.with-border {
+	border-bottom: 1px solid #f4f4f4;
+}
+
+.box-header {
+	color: #444;
+	display: block;
+	padding: 10px;
+	position: relative;
+}
+
+.box-header:before,
+.box-body:before,
+.box-footer:before,
+.box-header:after,
+.box-body:after,
+.box-footer:after {
+	content: "";
+	display: table;
+}
+
+.box-header {
+	color: #444;
+	display: block;
+	padding: 10px;
+	position: relative;
+}
+
+.box-header > .fa,
+.box-header > .glyphicon,
+.box-header > .ion,
+.box-header .box-title {
+	display: inline-block;
+	font-size: 18px;
+	margin: 0;
+	line-height: 1;
+}
+
+.box-header > .box-tools {
+	position: absolute;
+	right: 10px;
+	top: 5px;
+}
+
+.box-header > .box-tools [data-toggle="tooltip"] {
+	position: relative;
+}
+
+.bg-yellow,
+.callout.callout-warning,
+.alert-warning,
+.label-warning,
+.modal-warning .modal-body {
+	background-color: #f39c12 !important;
+}
+
+.bg-yellow {
+	color: #fff !important;
+}
+
+.btn {
+	border-radius: 3px;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	border: 1px solid transparent;
+}
+
+.btn-box-tool {
+	padding: 5px;
+	font-size: 12px;
+	background: transparent;
+	color: #97a0b3;
+}
+
+.direct-chat .box-body {
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+	position: relative;
+	overflow-x: hidden;
+	padding: 0;
+}
+
+.box-body {
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 3px;
+	border-bottom-left-radius: 3px;
+	padding: 10px;
+}
+
+.box-header:before,
+.box-body:before,
+.box-footer:before,
+.box-header:after,
+.box-body:after,
+.box-footer:after {
+	content: "";
+	display: table;
+}
+
+.direct-chat-messages {
+	-webkit-transform: translate(0, 0);
+	-ms-transform: translate(0, 0);
+	-o-transform: translate(0, 0);
+	transform: translate(0, 0);
+	padding: 10px;
+	height: 350px;
+	overflow: auto;
+}
+
+.direct-chat-messages,
+.direct-chat-contacts {
+	-webkit-transition: -webkit-transform 0.5s ease-in-out;
+	-moz-transition: -moz-transform 0.5s ease-in-out;
+	-o-transition: -o-transform 0.5s ease-in-out;
+	transition: transform 0.5s ease-in-out;
+}
+
+.direct-chat-msg {
+	margin-bottom: 10px;
+}
+
+.direct-chat-msg,
+.direct-chat-text {
+	display: block;
+}
+
+.direct-chat-info {
+	display: block;
+	margin-bottom: 2px;
+	font-size: 12px;
+}
+
+.direct-chat-timestamp {
+	color: #999;
+}
+
+.btn-group-vertical > .btn-group:after,
+.btn-group-vertical > .btn-group:before,
+.btn-toolbar:after,
+.btn-toolbar:before,
+.clearfix:after,
+.clearfix:before,
+.container-fluid:after,
+.container-fluid:before,
+.container:after,
+.container:before,
+.dl-horizontal dd:after,
+.dl-horizontal dd:before,
+.form-horizontal .form-group:after,
+.form-horizontal .form-group:before,
+.modal-footer:after,
+.modal-footer:before,
+.modal-header:after,
+.modal-header:before,
+.nav:after,
+.nav:before,
+.navbar-collapse:after,
+.navbar-collapse:before,
+.navbar-header:after,
+.navbar-header:before,
+.navbar:after,
+.navbar:before,
+.pager:after,
+.pager:before,
+.panel-body:after,
+.panel-body:before,
+.row:after,
+.row:before {
+	display: table;
+	content: "";
+}
+
+.direct-chat-img {
+	border-radius: 50%;
+	float: left;
+	width: 40px;
+	height: 40px;
+}
+
+.direct-chat-text {
+	border-radius: 5px;
+	position: relative;
+	padding: 5px 10px;
+	background: #d2d6de;
+	border: 1px solid #d2d6de;
+	margin: 5px 0 0 50px;
+	color: #444;
+}
+
+.direct-chat-msg,
+.direct-chat-text {
+	display: block;
+}
+
+.direct-chat-text:before {
+	border-width: 6px;
+	margin-top: -6px;
+}
+
+.direct-chat-text:after,
+.direct-chat-text:before {
+	position: absolute;
+	right: 100%;
+	top: 15px;
+	border: solid transparent;
+	border-right-color: #d2d6de;
+	content: " ";
+	height: 0;
+	width: 0;
+	pointer-events: none;
+}
+
+.direct-chat-text:after {
+	border-width: 5px;
+	margin-top: -5px;
+}
+
+.direct-chat-text:after,
+.direct-chat-text:before {
+	position: absolute;
+	right: 100%;
+	top: 15px;
+	border: solid transparent;
+	border-right-color: #d2d6de;
+	content: " ";
+	height: 0;
+	width: 0;
+	pointer-events: none;
+}
+
+:after,
+:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.direct-chat-msg:after {
+	clear: both;
+}
+
+.direct-chat-msg:after {
+	content: "";
+	display: table;
+}
+
+.direct-chat-info {
+	display: block;
+	margin-bottom: 2px;
+	font-size: 12px;
+}
+
+.right .direct-chat-img {
+	float: right;
+}
+
+.direct-chat-warning .right > .direct-chat-text {
+	background: #f39c12;
+	border-color: #f39c12;
+	color: #fff;
+}
+
+.right .direct-chat-text {
+	margin-right: 50px;
+	margin-left: 0;
+}
+
+.box-footer {
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 3px;
+	border-bottom-left-radius: 3px;
+	border-top: 1px solid #f4f4f4;
+	padding: 10px;
+	background-color: #fff;
+}
+
+.box-header:before,
+.box-body:before,
+.box-footer:before,
+.box-header:after,
+.box-body:after,
+.box-footer:after {
+	content: "";
+	display: table;
+}
+
+.input-group-btn {
+	position: relative;
+	font-size: 0;
+	white-space: nowrap;
+}
+
+.input-group-btn:last-child > .btn,
+.input-group-btn:last-child > .btn-group {
+	z-index: 2;
+	margin-left: -1px;
+}
+
+.btn-warning {
+	color: #fff;
+	background-color: #f0ad4e;
+	border-color: #eea236;
+}
+/* End Chat Popup */
 
 /* Resturent Start
 ============================================================================================ */
@@ -5393,6 +6052,23 @@ footer .footer-bottom .back-to-top {
 	position: fixed;
 	right: 15px;
 	bottom: 40px;
+	z-index: 100;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+	height: 50px;
+	width: 50px;
+	color: #fff;
+	border-radius: 50%;
+	background: #fea116;
+	line-height: 50px;
+	text-align: center;
+	font-size: 20px;
+}
+
+footer .footer-bottom .popup-chat {
+	position: fixed;
+	right: 15px;
+	bottom: 105px;
 	z-index: 100;
 	-webkit-transform: translateX(-50%);
 	transform: translateX(-50%);

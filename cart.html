@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Author: Phạm Ngọc Linh - Date: 9-3-2021 -->
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Cart Page</title>
+    <!-- Icon -->
+    <link rel="shortcut icon" href="assets/img/icons/01.png" type="image/x-icon">
+    <!-- Font Awesome Css -->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <!-- Bootstrap version 4.4.1 -->
+    <link rel="stylesheet" href="assets/css/bootstrap-4.4.1.min.css" />
+    <!-- animate css -->
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <!-- magnific popup version 1.1.0 -->
+    <link rel="stylesheet" href="assets/css/magnific-popup-1.1.0.css">
+    <!-- Nice Select  -->
+    <link rel="stylesheet" href="assets/css/nice-select-1.0.css">
+    <!-- meanmenu version 2.0.7 -->
+    <link rel="stylesheet" href="assets/css/meanmenu-2.0.7.min.css">
+    <!-- Slick Version 1.9.0 -->
+    <link rel="stylesheet" href="assets/css/slick-1.9.0.css" />
+    <!-- datetimepicker -->
+    <link rel="stylesheet" href="assets/css/bootstrap-datepicker.css" />
+    <!-- jQuery Ui for price range slide -->
+    <link rel="stylesheet" href="assets/css/jquery-ui.min.css">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- Responsive Css -->
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+</head>
+
+<body>
+    <!--[if lte IE 9]>
+    	<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+    <![endif]-->
+
+    <!-- preloader -->
+    <div class="loader" id="preLoader">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <!-- Header Start -->
+    <header>
+        <div class="header-top-area section-bg">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-xl-4 col-lg-7 offset-xl-3 col-md-6">
+                        <ul class="top-contact-info list-inline">
+                            <li><i class="far fa-map-marker-alt"></i>238 Hoàng Quốc Việt - Cầu Giấy</li>
+                            <li><i class="far fa-phone"></i>+84 0393286094</li>
+                        </ul>
+                    </div>
+                    <div class="col-xl-5 col-lg-5 col-md-6">
+                        <div class="top-right text-right">
+                            <ul class="top-social-icon list-inline d-inline">
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fab fa-google"></i></a></li>
+                            </ul>
+                            <ul class="top-menu list-inline d-inline ml-4">
+                                <li><a href="register.html"><i class="fa fa-user" aria-hidden="true"></i> Register</a>
+                                </li>
+                                <li><a href="login.html"><i class="fa fa-lock" aria-hidden="true"></i> Login</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-menu-area">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-xl-3 col-lg-3 col-md-4 col-7">
+                        <div class="logo">
+                            <a href="#"><img src="assets/img/logo.png" alt="Avson"></a>
+                        </div>
+                    </div>
+                    <div class="col-xl-9 col-lg-9 col-md-8 col-5">
+                        <div class="menu-right-area text-right">
+                            <div class="lag-select">
+                                <div class="lag-img">
+                                    <img id="flag-country" src="assets/img/icons/flag-en.png" alt="Flag">
+                                </div>
+                                <div class="lag-option">
+                                    <select id="lang">
+                                        <option class="lang" value="en">English</option>
+                                        <option class="lang" value="vi">VietNam</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <nav class="main-menu">
+                                <ul class="list-inline">
+                                    <li class="active-page">
+                                        <a href="/">Home</a>
+                                    </li>
+                                    <li class="have-submenu">
+                                        <a href="room.html">Rooms</a>
+                                        <ul class="submenu">
+                                            <li><a href="#">Room Classic</a></li>
+                                            <li><a href="#">Room Modern</a></li>
+                                            <li><a href="#">Room Luxury</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="service.html">Services</a></li>
+                                    <li class="submenu">
+                                        <a href="blog.html">News</a>
+                                    </li>
+                                    <li class="submenu">
+                                    <li><a href="about.html">About Us</a></li>
+                                    </li>
+                                    <li><a href="gallery.html">Gallery</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                </ul>
+                            </nav>
+                            <div class="search-wrap">
+                                <a href="#" class="search-icon"><i class="far fa-search"></i></a>
+                                <a href="#" class="search-icon icon-close">
+                                    <i class="far fa-times"></i>
+                                </a>
+                                <div class="search-form">
+                                    <form>
+                                        <input type="search" placeholder="TYPE AND PRESS ENTER.....">
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="quote-btn">
+                                <a href="room.html" class="btn filled-btn">Booking now
+                                    <i class="far fa-long-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mobilemenu"></div>
+            </div>
+        </div>
+    </header>
+    <!-- Header End -->
+    <!-- Main Wrap start -->
+    <main>
+        <!-- Breadcrumb section -->
+        <section class="breadcrumb-area d-flex align-items-center position-relative bg-img-center"
+            style="background-image: url(assets/img/bg/breadcrumb-01.jpg);">
+            <div class="container">
+                <div class="breadcrumb-content text-center">
+                    <h1>Cart</h1>
+                    <ul class="list-inline">
+                        <li><a href="index-2.html">Home</a></li>
+                        <li><i class="far fa-angle-double-right"></i></li>
+                        <li>Cart</li>
+                    </ul>
+                </div>
+            </div>
+            <h1 class="big-text">
+                Cart
+            </h1>
+        </section>
+        <!-- Breadcrumb section End-->
+        <section class="rooms-warp list-view section-bg">
+            <div class="container">
+                <div class="cart-page">
+                    <div class="margin_60">
+                        <div class="card">
+                            <div class="card-content">
+                                <div class="card-body">
+                                    <div class="table-cart">
+                                        <table class="table table-borderless mb-0">
+                                            <thead>
+                                                <tr class="text-center">
+                                                    <th width="20%">Image</th>
+                                                    <th width="20%">Information</th>
+                                                    <th width="10%">Adult</th>
+                                                    <th width="10%">Children</th>
+                                                    <th width="15%">Room</th>
+                                                    <th width="15%">Total</th>
+                                                    <th width="10%">Action</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr class="text-center">
+                                                    <td>
+                                                        <div class="product-img d-flex align-items-center">
+                                                            <img class="img-fluid" src="assets/img/rooms/01.jpg"
+                                                                alt="Card image cap">
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="product-title">HR Special Edition</div>
+                                                        <div class="product-color"><strong>Bed : </strong> 4</div>
+                                                        <div class="product-size"><strong>Bath:</strong> 2</div>
+                                                        <div class="product-size"><strong>Area: </strong>
+                                                            72m<sup>2</sup>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <select name="adult">
+                                                            <option value="adult">Adult</option>
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                        </select>
+                                                    </td>
+                                                    <td>
+                                                        <select name="child">
+                                                            <option value="child">Child</option>
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                        </select>
+                                                    </td>
+                                                    <td>
+                                                        <div class="input-group bootstrap-touchspin">
+                                                            <span
+                                                                class="input-group-btn input-group-prepend bootstrap-touchspin-injected"><button
+                                                                    class="btn btn-primary bootstrap-touchspin-down count-down"
+                                                                    type="button">-</button></span><input type="text"
+                                                                class="text-center count touchspin form-control"
+                                                                value="1"><span
+                                                                class="input-group-btn input-group-append bootstrap-touchspin-injected"><button
+                                                                    class="btn btn-primary bootstrap-touchspin-up count-up"
+                                                                    type="button">+</button></span>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="total-price">$250</div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="product-action">
+                                                            <a href="#" class="text-dark"><i
+                                                                    class="fas fa-times"></i></a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="match-height row mb-5">
+                        <div class="col-lg-6 col-md-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title">Apply Coupon</h4>
+                                </div>
+                                <div class="card-content">
+                                    <div class="card-body">
+                                        <label class="text-muted">Enter your coupon code if you have one!</label>
+                                        <form action="#">
+                                            <div class="form-body">
+                                                <input type="text" class="form-control-lg"
+                                                    placeholder="Enter Coupon Code Here">
+                                            </div>
+                                            <div class="form-actions border-0 pb-0 text-right">
+                                                <button type="button" class="btn btn-info">Apply Code</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title">Price Details</h4>
+                                </div>
+                                <div class="card-content">
+                                    <div class="card-body">
+                                        <div class="price-detail">HR Special Edition (4 rooms) <span
+                                                class="float-right">$2800</span>
+                                        </div>
+                                        <div class="price-detail">HR Special Vip (9 rooms) <span
+                                                class="float-right">$2800</span>
+                                        </div>
+                                        <div class="price-detail">HR Special Medium (3 rooms) <span
+                                                class="float-right">$2800</span>
+                                        </div>
+                                        <div class="price-detail">Coupon: <span class="float-right"> - $300</span>
+                                        </div>
+                                        <hr>
+                                        <div class="price-detail">Payable Amount <span class="float-right">$2300</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 my-5">
+                            <div class="card">
+                                <div class="card-content">
+                                    <div class="card-body">
+                                        <div class="text-right">
+                                            <a href="room.html" class="btn btn-info p-2 mr-3">Book Room</a>
+                                            <a href="#" class="btn btn-primary p-2">Place Order</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Container -->
+                    <!-- Chat popup -->
+                    <div class="chat-popup">
+                        <div class="page-content page-container" id="page-content">
+
+                            <div class="box box-warning direct-chat direct-chat-warning">
+                                <div class="box-header with-border">
+                                    <h3 class="box-title">Chat Messages</h3>
+                                    <div class="box-tools pull-right">
+                                        <button type="button" class="btn btn-box-tool remove-popup" data-close="remove">
+                                            <i class="fa fa-times"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="box-body">
+                                    <div class="direct-chat-messages">
+                                        <div class="direct-chat-msg">
+                                            <div class="direct-chat-info clearfix">
+                                                <span class="direct-chat-name pull-left">Alexander</span> <span
+                                                    class="direct-chat-timestamp pull-right">23 Jan
+                                                    2:00
+                                                    pm</span>
+                                            </div> <img class="direct-chat-img"
+                                                src="https://img.icons8.com/color/36/000000/administrator-male.png"
+                                                alt="message user image">
+                                            <div class="direct-chat-text"> For what reason would it be advisable for me
+                                                to think
+                                                about business content? </div>
+                                        </div>
+                                        <div class="direct-chat-msg right">
+                                            <div class="direct-chat-info clearfix"> <span
+                                                    class="direct-chat-name pull-right">Sarah
+                                                    Bullock</span>
+                                                <span class="direct-chat-timestamp pull-left">23 Jan 2:05 pm</span>
+                                            </div> <img class="direct-chat-img"
+                                                src="https://img.icons8.com/office/36/000000/person-female.png"
+                                                alt="message user image">
+                                            <div class="direct-chat-text"> Thank you for your believe in our supports
+                                            </div>
+                                        </div>
+                                        <div class="direct-chat-msg">
+                                            <div class="direct-chat-info clearfix"> <span
+                                                    class="direct-chat-name pull-left">Timona
+                                                    Siera</span> <span class="direct-chat-timestamp pull-right">23 Jan
+                                                    5:37
+                                                    pm</span> </div> <img class="direct-chat-img"
+                                                src="https://img.icons8.com/color/36/000000/administrator-male.png"
+                                                alt="message user image">
+                                            <div class="direct-chat-text"> For what reason would it be advisable for me
+                                                to think
+                                                about business content? </div>
+                                        </div>
+                                        <div class="direct-chat-msg right">
+                                            <div class="direct-chat-info clearfix"> <span
+                                                    class="direct-chat-name pull-right">Sarah
+                                                    Bullock</span> <span class="direct-chat-timestamp pull-left">23 Jan
+                                                    6:10
+                                                    pm</span> </div> <img class="direct-chat-img"
+                                                src="https://img.icons8.com/office/36/000000/person-female.png"
+                                                alt="message user image">
+                                            <div class="direct-chat-text"> I would love to. </div>
+                                        </div>
+
+                                        <div class="direct-chat-msg right">
+                                            <div class="direct-chat-info clearfix"> <span
+                                                    class="direct-chat-name pull-right">Sarah
+                                                    Bullock</span> <span class="direct-chat-timestamp pull-left">23 Jan
+                                                    6:10
+                                                    pm</span> </div> <img class="direct-chat-img"
+                                                src="https://img.icons8.com/office/36/000000/person-female.png"
+                                                alt="message user image">
+                                            <div class="direct-chat-text"> Thanks a lot. </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box-footer my-2">
+                                    <form action="#" method="post">
+                                        <div class="input-group">
+                                            <input type="text" name="message" placeholder="Type Message ..."
+                                                class="form-control">
+                                            <span class="input-group-btn">
+                                                <button type="submit"
+                                                    class="btn filled-btn px-2 py-1 ml-3">Send</button>
+                                            </span>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Main Wrap end -->
+    <!-- Footer Start -->
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="widget footer-widget">
+                            <div class="footer-logo">
+                                <img src="assets/img/logo.png" alt="Logo">
+                            </div>
+                            <p>Avoids pleasure itself, because pleasure, but because those who do not</p>
+                            <ul class="social-icons">
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fab fa-google"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="widget footer-widget">
+                            <h4 class="widget-title">Quick Links</h4>
+                            <ul class="nav-widget clearfix">
+                                <li><a href="#">Latest Services</a></li>
+                                <li><a href="#">Our History</a></li>
+                                <li><a href="#">Need A Career ?</a></li>
+                                <li><a href="#">My Account</a></li>
+                                <li><a href="#">Meet The Team</a></li>
+                                <li><a href="#">Web Security</a></li>
+                                <li><a href="#">Setting & Privacy</a></li>
+                                <li><a href="#">Domain & Hosting</a></li>
+                                <li><a href="#">Case Study</a></li>
+                                <li><a href="#">Server System</a></li>
+                                <li><a href="#">Company Fact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="widget footer-widget">
+                            <h4 class="widget-title">Recent News</h4>
+                            <ul class="recent-post">
+                                <li>
+                                    <div class="recent-post-img">
+                                        <img src="assets/img/recent-post/01.jpg" alt="News">
+                                    </div>
+                                    <h6><a href="#">Using Low Vision As My Too Me Teach WordPress</a></h6>
+                                    <span class="recent-post-date">05 Jan 20</span>
+                                </li>
+                                <li>
+                                    <div class="recent-post-img">
+                                        <img src="assets/img/recent-post/02.jpg" alt="News">
+                                    </div>
+                                    <h6><a href="#">Embarking On New Advent Inspiring Desktop Wall</a></h6>
+                                    <span class="recent-post-date">05 Jan 20</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <a href="#" class="back-to-top"><i class="far fa-angle-up"></i></a>
+                <a href="#" class="popup-chat"><i class="fas fa-comment-dots"></i></a>
+                <div class="row">
+                    <div class="col-md-6">
+                        <ul class="footer-nav">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Team</a></li>
+                            <li><a href="#">Features</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <p class="copy-right text-right">Copyright ©2020. All Rights Reserved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+    <!-- modernizr version 3.6.0 -->
+    <script src="assets/js/modernizr-3.6.0.min.js"></script>
+    <!-- jQuery Version 1.12.4 -->
+    <script src="assets/js/jquery-1.12.4.min.js"></script>
+    <!-- Proper Version 1.16.0-->
+    <script src="assets/js/popper.min-1.16.0.js"></script>
+    <!-- Bootstrap Version 4.4.1 -->
+    <script src="assets/js/bootstrap-4.4.1.min.js"></script>
+    <!-- Slick Version 1.9.0 -->
+    <script src="assets/js/slick.min-1.9.0.js"></script>
+    <!-- isotope version 3.0.6 -->
+    <script src="assets/js/isotope.pkgd-3.0.6.min.js"></script>
+    <!-- MeanMenu version 2.0.7-->
+    <script src="assets/js/meanmenu-2.0.7.min.js"></script>
+    <!-- Nice select js version 1.0 -->
+    <script src="assets/js/jquery.nice-select-1.0.min.js"></script>
+    <!-- wow js version 1.1.3-->
+    <script src="assets/js/wow-1.1.3.min.js"></script>
+    <!-- magnific popup version 1.1.0 -->
+    <script src="assets/js/magnific-popup-1.1.0.min.js"></script>
+    <!-- jQuery inview  -->
+    <script src="assets/js/jquery.inview.min.js"></script>
+    <!-- Waypoints js version 2.0.3 -->
+    <script src="assets/js/waypoints-2.0.3.min.js"></script>
+    <!-- counterup js version 1.0 -->
+    <script src="assets/js/jquery.counterup-1.0.min.js"></script>
+    <!-- bootstrap datepicker -->
+    <script src="assets/js/bootstrap-datepicker.js"></script>
+    <!-- jQuery Ui for price range slide -->
+    <script src="assets/js/jquery-ui.min.js"></script>
+    <!-- Google Maps -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDC3Ip9iVC0nIxC6V14CKLQ1HZNF_65qEQ"></script>
+    <!-- Main JS file -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+
+</html>

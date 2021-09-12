@@ -59,6 +59,31 @@ $(function () {
 		$(".item-list").removeClass("active");
 	});
 
+	// Toggle chat
+	$(".popup-chat").click(function (e) {
+		e.preventDefault();
+		$(".chat-popup").toggle();
+	});
+
+	$(".remove-popup").click(function (e) {
+		e.preventDefault();
+		$(".chat-popup").toggle();
+	});
+
+	$(".count-down").click(function () {
+		let value = $(".count").val();
+		if (value - 1 == 0) {
+			$(".count").val(1);
+		} else {
+			$(".count").val(parseInt(value) - 1);
+		}
+	});
+
+	$(".count-up").click(function () {
+		let value = $(".count").val();
+		$(".count").val(parseInt(value) + 1);
+	});
+
 	// Height default element
 	// var heightDefault = 0;
 
