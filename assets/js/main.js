@@ -84,6 +84,56 @@ $(function () {
 		$(".count").val(parseInt(value) + 1);
 	});
 
+	// Date Picker
+	$(function () {
+		$("#date-picker").daterangepicker({
+			timePicker: true,
+			startDate: moment().startOf("hour"),
+			endDate: moment().startOf("hour").add(32, "hour"),
+			locale: {
+				format: "M/DD hh:mm A",
+			},
+		});
+	});
+
+	// Contact GG Map
+	// 21.046571907695437, 105.78343945608991;
+	function myMap() {
+		var mapProp = {
+			mapTypeId: google.maps.MapTypeId.TERRAIN,
+			scrollwheel: false,
+
+			center: new google.maps.LatLng(
+				21.046571907695437,
+				105.78343945608991
+			),
+			zoom: 15,
+		};
+		var map = new google.maps.Map(
+			document.getElementById("contactMap"),
+			mapProp
+		);
+
+		var iconBase = "../img/icons/03.png";
+
+		var marker = new google.maps.Marker({
+			map: map,
+			position: map.getCenter(),
+			// position: myCenter,
+			title: "Click to zoom",
+			icon: iconBase,
+			animation: google.maps.Animation.BOUNCE,
+		});
+
+		marker.setMap(map);
+
+		var infowindow = new google.maps.InfoWindow({
+			content: "Welcome to BachKhoa-Aptech !",
+		});
+
+		infowindow.open(map, marker);
+	}
+
 	// Height default element
 	// var heightDefault = 0;
 

@@ -7,7 +7,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Contact Page</title>
+    <title>Room Page</title>
     <!-- Font Awesome Css -->
     <link rel="stylesheet" href="assets/css/all.min.css">
     <!-- Bootstrap version 4.4.1 -->
@@ -32,10 +32,25 @@
     <link rel="stylesheet" href="assets/css/responsive.css" />
 </head>
 
-<body class="blog-details-page">
+<style>
+    .input-avatar {
+        background-color: #fff;
+        border: 2px solid #dfe9f4;
+        height: 45px;
+        font-weight: 600;
+        color: #0f172b;
+        font-size: 14px;
+        padding: 0;
+        border-radius: 5px;
+        width: 100%;
+        line-height: 35px;
+    }
+</style>
+
+<body class="room-details-page">
     <!--[if lte IE 9]>
-		<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-	<![endif]-->
+			<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+		<![endif]-->
 
     <!-- preloader -->
     <div class="loader" id="preLoader">
@@ -139,126 +154,128 @@
             </div>
         </div>
     </header>
+    <!-- Header End -->
     <!-- Main Wrap start -->
     <main>
-        <!-- Breadcrumb section -->
-        <section class="breadcrumb-area d-flex align-items-center position-relative bg-img-center"
-            style="background-image: url(assets/img/bg/breadcrumb-02.jpg);">
+        <section class="room-details-wrapper section-padding">
             <div class="container">
-                <div class="breadcrumb-content text-center">
-                    <h1>Contact</h1>
-                    <ul class="list-inline">
-                        <li><a href="/">Home</a></li>
-                        <li><i class="far fa-angle-double-right"></i></li>
-                        <li>Contact</li>
-                    </ul>
-                </div>
-            </div>
-            <h1 class="big-text">
-                Contact
-            </h1>
-        </section>
-        <!-- Breadcrumb section End-->
-        <!-- Contact Page info Start -->
-        <section class="contact-info-section">
-            <div class="container">
-                <!-- Section Title Start -->
                 <div class="row">
-                    <div class="col-lg-5">
-                        <div class="section-title">
-                            <span class="title-top">Have A Coffee</span>
-                            <h1>Don't Hesitate To <br> Contact Us</h1>
+                    <div class="col-lg-12">
+                        <!-- Room Details -->
+                        <div class="room-details">
+                            <div class="entry-header">
+                                <div class="post-thumb position-relative">
+                                    <h2 class="entry-title">Personal Profile</h2>
+                                </div>
+                                <div class="room-details-tab">
+                                    <div class="row">
+                                        <div class="col-sm-3">
+                                            <ul class="nav desc-tab-item" role="tablist">
+                                                <li class="nav-item">
+                                                    <a class="nav-link active" href="#info" role="tab"
+                                                        data-toggle="tab">Information</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" href="#location" role="tab"
+                                                        data-toggle="tab">Change Password</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" href="#reviews" role="tab"
+                                                        data-toggle="tab">Reviews</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-sm-9">
+                                            <div class="tab-content desc-tab-content">
+                                                <div role="tabpanel" class="tab-pane fade in active show" id="info">
+                                                    <h5 class="tab-title">Your Information</h5>
+                                                    <div class="row">
+                                                        <div class="col-lg-4">
+                                                            <div class="profile-picture p-3">
+                                                                <img src="https://www.seekpng.com/png/full/245-2454602_tanni-chand-default-user-image-png.png"
+                                                                    alt="Avatar">
+                                                                <form method="POST">
+                                                                    <div class="form-group">
+                                                                        <label for="avatar">Choose New Avatar</label>
+                                                                        <input type="file"
+                                                                            class="form-control-file input-avatar"
+                                                                            name="avatar" id="avatar">
+                                                                    </div>
+                                                                </form>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-8">
+                                                            <div class="form-group">
+                                                                <label for="name">Name
+                                                                    <sup>*</sup></label>
+                                                                <input type="text" class="form-control" name="name"
+                                                                    placeholder="Enter email">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label for="email">Email
+                                                                    <sup>*</sup></label>
+                                                                <input type="email" class="form-control" id="email"
+                                                                    name="email" placeholder="Enter email">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label for="phone">Phone
+                                                                    <sup>*</sup></label>
+                                                                <input type="text" class="form-control" id="phone"
+                                                                    name="phone" placeholder="Enter email">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label for="address">Address
+                                                                    <sup>*</sup></label>
+                                                                <input type="text" class="form-control" id="address"
+                                                                    name="address" placeholder="Enter address">
+                                                            </div>
+                                                            <button type="submit"
+                                                                class="btn btn-primary px-3 py-2 my-2">Update</button>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div role="tabpanel" class="tab-pane fade" id="location">
+                                                    <h5 class="tab-title">Change Password</h5>
+                                                    <div class="row">
+                                                        <div class="col-lg-7">
+                                                            <form action="" method="POST">
+                                                                <div class="form-group">
+                                                                    <label for="old_password">Old Password
+                                                                        <sup>*</sup></label>
+                                                                    <input type="password" class="form-control"
+                                                                        name="old_password" placeholder="Old Password">
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <label for="new_password">New Password
+                                                                        <sup>*</sup></label>
+                                                                    <input type="password" class="form-control"
+                                                                        name="new_password" placeholder="New Password">
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <label for="cf_password">Confirm Password
+                                                                        <sup>*</sup></label>
+                                                                    <input type="password" class="form-control"
+                                                                        name="cf_password"
+                                                                        placeholder="Confirm Password">
+                                                                </div>
+                                                                <button type="submit"
+                                                                    class="btn btn-primary px-3 py-2 my-2">Change
+                                                                    Password</button>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div role="tabpanel" class="tab-pane fade" id="reviews">
+                                                <h5 class="tab-title">Reviews</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-7">
-                        <p>
-                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                            laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
-                            architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
-                            aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
-                            voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum
-                        </p>
-                    </div>
-                </div>
-                <!-- Section Title End -->
-                <div class="contact-info-boxes">
-                    <div class="row">
-                        <div class="col-lg-4 col-md-6">
-                            <div class="contact-info-box">
-                                <div class="contact-icon">
-                                    <i class="far fa-map-marker-alt"></i>
-                                </div>
-                                <h4>Address</h4>
-                                <p>GymVast, 18 East 50th Street,</p>
-                                <p> 4th Floor, New York, NY 22</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6">
-                            <div class="contact-info-box">
-                                <div class="contact-icon">
-                                    <i class="far fa-envelope-open"></i>
-                                </div>
-                                <h4>Email</h4>
-                                <p><a href="#">support@gmail.com</a></p>
-                                <p><a href="#">avson@gmail.com</a></p>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 mx-auto">
-                            <div class="contact-info-box">
-                                <div class="contact-icon">
-                                    <i class="far fa-phone"></i>
-                                </div>
-                                <h4>Phone Us</h4>
-                                <p>+0123 (456) 7899</p>
-                                <p>+1234567899</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Contact Page Info End -->
-        <!-- Map -->
-        <section class="contact-map" id="contactMap">
-        </section>
-        <!-- Map End -->
-        <!-- Contact Form -->
-        <section class="contact-form">
-            <div class="container ">
-                <div class="contact-form-wrap section-bg">
-                    <h2 class="form-title">Send A Message</h2>
-                    <form>
-                        <div class="row">
-                            <div class="col-md-4 col-12">
-                                <div class="input-wrap">
-                                    <input type="text" placeholder="Your Full Name" id="name">
-                                    <i class="far fa-user-alt"></i>
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-12">
-                                <div class="input-wrap">
-                                    <input type="text" placeholder="Your Email" id="email">
-                                    <i class="far fa-envelope"></i>
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-12">
-                                <div class="input-wrap">
-                                    <input type="text" placeholder="Your Phone" id="phone">
-                                    <i class="fa fa-phone"></i>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="input-wrap text-area">
-                                    <textarea placeholder="Write Message"></textarea>
-                                    <i class="far fa-pencil"></i>
-                                </div>
-                            </div>
-                            <div class="col-12 text-center">
-                                <button type="submit" class="btn filled-btn">Send Message <i
-                                        class="far fa-long-arrow-right"></i></button>
-                            </div>
-                        </div>
-                    </form>
                 </div>
             </div>
         </section>
@@ -375,54 +392,9 @@
     <!-- jQuery Ui for price range slide -->
     <script src="assets/js/jquery-ui.min.js"></script>
     <!-- Google Maps -->
-    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDC3Ip9iVC0nIxC6V14CKLQ1HZNF_65qEQ"></script> -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDC3Ip9iVC0nIxC6V14CKLQ1HZNF_65qEQ"></script>
     <!-- Main JS file -->
     <script src="assets/js/main.js"></script>
-
-    <script>
-        // 21.046571907695437, 105.78343945608991;
-        function myMap() {
-            var mapProp = {
-                mapTypeId: google.maps.MapTypeId.TERRAIN,
-                center: new google.maps.LatLng(21.046601430939216, 105.7833445554185),
-                zoom: 15,
-            };
-            var map = new google.maps.Map(document.getElementById("contactMap"), mapProp);
-
-            var marker = new google.maps.Marker({
-                map: map,
-                position: myCenter,
-                title: 'Click to zoom',
-                animation: google.maps.Animation.BOUNCE
-            });
-
-            marker.setMap(map);
-
-            var infowindow = new google.maps.InfoWindow({
-                content: "Welcome to BachKhoa-Aptech !"
-            });
-
-            infowindow.open(map, marker);
-
-            // Configure the click listener.
-            map.addListener("click", (mapsMouseEvent) => {
-                // Close the current InfoWindow.
-                infoWindow.close();
-                // Create a new InfoWindow.
-                infoWindow = new google.maps.InfoWindow({
-                    position: mapsMouseEvent.latLng,
-                });
-                infoWindow.setContent(
-                    JSON.stringify(mapsMouseEvent.latLng.toJSON(), null, 2)
-                );
-                infoWindow.open(map);
-
-            });
-        }
-    </script>
-
-    <script
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAFGZV7aczW8BFE53IKMt4DeiPWEFDCRwE&callback=myMap"></script>
 </body>
 
 

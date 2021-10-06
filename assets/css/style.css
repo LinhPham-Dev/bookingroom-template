@@ -3071,7 +3071,7 @@ a.read-more:hover {
 
 .contact-map {
 	width: 100%;
-	/* height: 670px; */
+	height: 670px;
 }
 
 .contact-form {
@@ -4701,6 +4701,12 @@ a.read-more:hover {
 	font-size: 16px;
 	color: #0f172b;
 	font-weight: 700;
+}
+
+.hourselect,
+.minuteselect,
+.ampmselect {
+	height: 25px;
 }
 
 .room-details-wrapper .room-specification .specific-title {
